@@ -5,7 +5,9 @@
         <NewsCard v-for="news in newsData"
                   v-bind:key="news.id"
                   :title="news.title"
-                  :text="news.description">
+                  :text="news.description"
+                  :image="news.urlToImage"
+                  :link="news.url">
         </NewsCard>
     </div>
 </template>

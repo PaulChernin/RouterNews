@@ -6,10 +6,10 @@
     <v-img
       class="white--text align-end"
       height="200px"
-      src="https://cdn.vuetifyjs.com/images/cards/docks.jpg"
+      :src="image"
     >
-      <v-card-title>{{title}}</v-card-title>
     </v-img>
+    <v-card-title>{{title}}</v-card-title>
 
     <!-- <v-card-subtitle class="pb-0">{{subtitle}}</v-card-subtitle> -->
 
@@ -28,6 +28,7 @@
       <v-btn
         color="orange"
         text
+        :href="link"
       >
         Explore
       </v-btn>
@@ -41,7 +42,9 @@ export default {
     props: {
         title: String,
         //subtitle: String,
-        text: String
+        text: String,
+        image: String,
+        link: String
     }
 }
 </script>
