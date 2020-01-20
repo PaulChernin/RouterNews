@@ -11,7 +11,7 @@
       <v-card-title>{{title}}</v-card-title>
     </v-img>
 
-    <v-card-subtitle class="pb-0">{{subtitle}}</v-card-subtitle>
+    <!-- <v-card-subtitle class="pb-0">{{subtitle}}</v-card-subtitle> -->
 
     <v-card-text class="text--primary">
       <div>{{text}}</div>
@@ -40,7 +40,7 @@ export default {
     name: 'NewsCard',
     props: {
         title: String,
-        subtitle: String,
+        //subtitle: String,
         text: String
     }
 }
