@@ -11,20 +11,12 @@
     </v-img>
     <v-card-title>{{title}}</v-card-title>
 
-    <!-- <v-card-subtitle class="pb-0">{{subtitle}}</v-card-subtitle> -->
-
     <v-card-text class="text--primary">
       <div>{{text}}</div>
     </v-card-text>
 
     <v-card-actions>
-      <v-btn
-        color="orange"
-        text
-      >
-        Share
-      </v-btn>
-
+      <v-spacer></v-spacer>
       <v-btn
         color="orange"
         text
@@ -41,7 +33,6 @@ export default {
     name: 'NewsCard',
     props: {
         title: String,
-        //subtitle: String,
         text: String,
         image: String,
         link: String

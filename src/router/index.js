@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
-import En from '../views/En.vue'
+import Us from '../views/Us.vue'
 import Ru from '../views/Ru.vue'
 
 Vue.use(VueRouter)
@@ -26,9 +26,9 @@ const routes = [
   //   component: Languages
   // },
   {
-    path: '/en',
-    name: 'en',
-    component: En
+    path: '/us',
+    name: 'us',
+    component: Us
   },
   {
     path: '/ru',

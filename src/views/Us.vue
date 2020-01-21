@@ -1,7 +1,7 @@
 <template>
   <div class="about">
-    <h1>This is RU page</h1>
-    <CardList country='ru'></CardList>
+    <h1>This is US page</h1>
+    <CardList country='us'></CardList>
   </div>
 </template>
 

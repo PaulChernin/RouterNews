@@ -17,6 +17,9 @@ import NewsCard from './NewsCard.vue'
 
 export default {
     name: 'CardList',
+    props: {
+        country: String
+    },
     components: {
         NewsCard
     },
@@ -30,7 +33,7 @@ export default {
     },
     methods: {
         getNews() {
-            this.axios.get('https://newsapi.org/v2/top-headlines?country=ru&apiKey=d7f41a32c26b4bbfb596d58b1a54c766')
+            this.axios.get(`https://newsapi.org/v2/top-headlines?country=${this.country}&apiKey=d7f41a32c26b4bbfb596d58b1a54c766`)
             .then((response) => {
                 //alert('got json')
                 this.newsData = response.data.articles
