@@ -22,7 +22,7 @@
         text
         :href="link"
       >
-        Explore
+        Перейти
       </v-btn>
     </v-card-actions>
   </v-card>
