@@ -1,7 +1,6 @@
 <template>
   <div class="home">
-    <h1>home</h1>
-    <CardList country='ru'></CardList>
+    <CardList :country="this.$route.params.country"></CardList>
   </div>
 </template>
 

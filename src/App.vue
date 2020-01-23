@@ -1,13 +1,26 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/us">Us</router-link> | 
-      <router-link to="/ru">Ru</router-link>
+      <router-link v-for="country in countries"
+                   v-bind:key="country"
+                   :to="'/' + country">
+        {{country}}
+      </router-link>
+
     </div>
     <router-view/>
   </div>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      countries: ['us', 'ru', 'fr', 'de']
+    }
+  }
+}
+</script>
 
 <style lang="scss">
 #app {

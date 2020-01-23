@@ -1,7 +1,5 @@
 <template>
     <div>
-        <!-- <NewsCard title="Top 10 Australian beaches" subtitle="Number 10" text="Whitehaven Beach Whitsunday Island, Whitsunday Islands"></NewsCard> -->
-        <!-- <p v-for="news in newsData" v-bind:key="news.id">{{news}} конец </p> -->
         <NewsCard v-for="news in newsData"
                   v-bind:key="news.id"
                   :title="news.title"
@@ -41,6 +39,11 @@ export default {
             .catch(() => {
                 alert('не получилось')
             })
+        }
+    },
+    watch: {
+        $route() {
+            this.getNews()
         }
     }
 }

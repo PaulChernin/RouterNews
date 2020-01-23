@@ -1,15 +1,15 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
-import Us from '../views/Us.vue'
-import Ru from '../views/Ru.vue'
+//import Us from '../views/Us.vue'
+//import Ru from '../views/Ru.vue'
 
 Vue.use(VueRouter)
 
 const routes = [
   {
-    path: '/',
-    name: 'home',
+    path: '/:country',
+    //name: 'home',
     component: Home
   },
   // {
@@ -25,16 +25,16 @@ const routes = [
   //   name: 'languages',
   //   component: Languages
   // },
-  {
-    path: '/us',
-    name: 'us',
-    component: Us
-  },
-  {
-    path: '/ru',
-    name: 'ru',
-    component: Ru
-  }
+  // {
+  //   path: '/us',
+  //   name: 'us',
+  //   component: Us
+  // },
+  // {
+  //   path: '/ru',
+  //   name: 'ru',
+  //   component: Ru
+  // }
 ]
 
 const router = new VueRouter({
